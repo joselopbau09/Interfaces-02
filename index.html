@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cuestionario</title>
+</head>
+<body>
+    <h1>Cuetionario</h1>
+    <form method="post">
+        <h2>Información personal</h2>
+        <input type="text" placeholder="Nombre" name="name"> 
+        <input type="text" placeholder="Apellido" name="lastname"> <br>
+        <input type="email" placeholder="Correo electrónico" name="email"> <br>
+        <div>
+            <b><p>  Sexo:</p></b>
+            <input checked type="radio" name="grupo1" value="masculino">Masculino <br>
+            <input type="radio" name="grupo1" value="femenino">Femenino <br>
+        </div>        
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" min="1" max="122"><br>
+        
+        <h2>Información musical</h2>
+        <b><p>Generos favoritos:</p></b>
+        <ul>
+            <li>
+                <label for="rock">Rock</label>
+                <input type="checkbox" name="rock">
+            </li>
+            <li>
+                <label for="pop">Pop</label>
+                <input type="checkbox" name="pop">
+            </li>
+            <li>
+                <label for="hip-hop">Hip-Hop</label>
+                <input type="checkbox" name="hip-hop">
+            </li>
+            <li>
+                <label for="electronica">Electrónica</label>
+                <input type="checkbox" name="electronica">
+            </li>            
+            <li>
+                <label for="reggaeton">Reggaetón</label>  
+                <input type="checkbox" name="reggaeton">
+            </li>            
+        </ul>
+        
+        <b><p>Formato:</p></b>
+        <ul>
+            <li>
+                <label for="vinilo">Vinilo</label>
+                <input type="checkbox" name="vinilo">
+            </li>
+            <li>
+                <label for="cd">CD</label>
+                <input type="checkbox" name="cd">
+            </li>
+            <li>
+                <label for="digital">Digital</label>
+                <input type="checkbox" name="digital">
+            </li>
+        </ul>
+
+        <div>
+            <b><p>  Estado:</p></b>
+            <input checked type="radio" name="grupo2" value="usado">Usado <br>
+            <input type="radio" name="grupo2" value="nuevo">Nuevo <br>
+        </div>        
+
+        <br><button>Enviar</button>
+    </form>
+</body>
+</html>
