@@ -1,0 +1,28 @@
+:root{
+    --fondo:#eafaf1;
+    --entradasCuestionario: #d6dae5;
+    --fondoCuestionario:#fcfcfc;
+}
+
+body {
+    background-color: var(--fondo);
+}
+
+input {
+    background-color: var(--entradasCuestionario);
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+form>div {
+    background-color: var(--fondoCuestionario);
+    margin: 10px 30rem;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.personalInformation h2 {
+    margin-top: 0;
+}
