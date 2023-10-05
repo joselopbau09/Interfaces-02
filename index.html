@@ -1,81 +1,66 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" as="font">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap">
+
     <title>Cuestionario</title>
 </head>
 <body>
     <header>
-        <h1>Cuetionario</h1>
+        <h1 class="no-margin">Cuestionario</h1>
     </header>
 
-    <form method="post">
-        <div class="personalInformation">
-            <h2>Información personal</h2>
-            <input type="text" placeholder="Nombre" name="name"> 
-            <input type="text" placeholder="Apellido" name="lastname"> <br>
-            <input type="email" placeholder="Correo electrónico" name="email"> <br>
-            <div>
-                <b><p>  Sexo:</p></b>
-                <input checked type="radio" name="grupo1" value="masculino">Masculino <br>
-                <input type="radio" name="grupo1" value="femenino">Femenino <br>
-            </div>        
-            <label for="edad">Edad:</label>
-            <input type="number" name="edad" id="edad" min="1" max="122"><br>
-        </div>
-        
-        <div>
-            <h2>Información musical</h2>
-            <b><p>Generos favoritos:</p></b>
-            <ul>
-                <li>
-                    <label for="rock">Rock</label>
-                    <input type="checkbox" name="rock">
-                </li>
-                <li>
-                    <label for="pop">Pop</label>
-                    <input type="checkbox" name="pop">
-                </li>
-                <li>
-                    <label for="hip-hop">Hip-Hop</label>
-                    <input type="checkbox" name="hip-hop">
-                </li>
-                <li>
-                    <label for="electronica">Electrónica</label>
-                    <input type="checkbox" name="electronica">
-                </li>            
-                <li>
-                    <label for="reggaeton">Reggaetón</label>  
-                    <input type="checkbox" name="reggaeton">
-                </li>            
-            </ul>
-            
-            <b><p>Formato:</p></b>
-            <ul>
-                <li>
-                    <label for="vinilo">Vinilo</label>
-                    <input type="checkbox" name="vinilo">
-                </li>
-                <li>
-                    <label for="cd">CD</label>
-                    <input type="checkbox" name="cd">
-                </li>
-                <li>
-                    <label for="digital">Digital</label>
-                    <input type="checkbox" name="digital">
-                </li>
-            </ul>
-    
-            <div>
-                <b><p>  Estado:</p></b>
-                <input checked type="radio" name="grupo2" value="usado">Usado <br>
-                <input type="radio" name="grupo2" value="nuevo">Nuevo <br>
-            </div>        
-        </div>
 
-        <br><button>Enviar</button>
+    <form class="contenedor card" method="post">
+        <div>
+            <h2>Información personal</h2>
+            <div class="Information">
+                <div class="nombre">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name"> 
+                    <label for="lastname">Apellidos:</label>
+                    <input type="text" name="lastname"> <br>
+                </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="email" style="width:min(63%);"> <br>
+                </div>
+                
+                <div>
+                    <p>  Sexo:</p>
+                    <input checked type="radio" name="grupo1" value="masculino">Masculino <br>
+                    <input type="radio" name="grupo1" value="femenino">Femenino <br>
+                </div>
+    
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" id="edad" min="1" max="122"><br>
+                </div>
+            </div>        
+    
+            <h2>Información del Sitio</h2>
+            <div class="Information">
+
+                <div>
+                    <label for="cantidad">Cantidad de usuarios aprox:</label>
+                    <input type="number" name="cantidad" id="edad" min="1"><br>
+                </div>
+
+                <div>
+                    <label for="presupuesto">Presupuesto:</label>
+                    <input type="number" name="presupuesto" id="edad" min="1"><br>
+                </div>        
+            </div>
+    
+            <br><button>Enviar</button>
+        </div>
     </form>
 </body>
 </html>

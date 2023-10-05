@@ -2,10 +2,36 @@
     --fondo:#eafaf1;
     --entradasCuestionario: #d6dae5;
     --fondoCuestionario:#fcfcfc;
+    --header: #080c16;
+    --boton: #1fe374;
+
+    --fuente:'Outfit', sans-serif;
 }
 
 body {
     background-color: var(--fondo);
+    margin: 0;
+    font-family: var(--fuente);
+    font-size: 1.1rem;
+}
+p {
+    margin: 0;
+}
+h1,h2 {
+    margin: 1rem;
+    text-align: center;
+}
+
+.contenedor {
+    width: min(40%, 100rem);
+    margin: 5rem auto;
+}
+
+header {
+    background-color: var(--header);
+    color: #fcfcfc;
+    padding: 1.5rem;
+    text-align: center;
 }
 
 input {
@@ -14,15 +40,39 @@ input {
     padding: 4px;
     border-radius: 4px;
 }
+button {
+    background-color:var(--boton);
+    padding: 7px;
+    width: 8rem;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+button:hover {
+    background-color: var(--fondoCuestionario);
+    border: 2px solid var(--boton) ;
+}
+
+.no-margin {
+    margin: 0;
+}
 
 form>div {
     background-color: var(--fondoCuestionario);
-    margin: 10px 30rem;
     padding: 15px;
-    text-align: center;
     border-radius: 10px;
 }
 
-.personalInformation h2 {
+.Information>div {
+    display: block;
+    margin: .6rem;
+}
+
+.Information h2 {
     margin-top: 0;
+    text-align: center;
+}
+.nombre {
+    margin-bottom: 10px;
 }
